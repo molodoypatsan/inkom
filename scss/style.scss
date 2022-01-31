@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoSansCyrl-300.eot');
+    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoSansCyrl-500.eot');
+    src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoSansCyrl-700.eot');
+    src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/MuseoSansCyrl-900.eot');
+    src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-900.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Museo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+$maincolor: #cfa55b;
+
+.container {
+    max-width: 82.5rem;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: $maincolor;
+    box-shadow: 0rem 0rem 3.75rem rgba(255, 194, 86, 0.5);
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -0.4375rem;
+        right: -0.4375rem;
+        top: -0.4375rem;
+        bottom: -0.4375rem;
+        border: 0.0625rem solid $maincolor;
+        border-radius: 0.3125rem;
+        transition: 0.3s;
+    }
+
+    &:hover::before {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+.main {
+    background:  linear-gradient(167.45deg, rgba(78, 75, 69, 0.7) 88.99%, rgba(78, 75, 69, 0) 154.01%), url('../img/Rectangle.png') no-repeat 0 0/cover;
+    padding: 3.3125rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 6.875rem;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.logo__title {        
+    font-size: 3.1875rem;
+    line-height: 1.8125rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+}
+
+.logo__subtitle {
+    font-size: 1.6875rem;
+    line-height: 2rem;
+    color: $maincolor;
+}
+
+.header__left-text {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right-tel {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
+    position: relative;
+    transition: 0.3s;
+    &::after {
+        content: "";
+        display: block;
+        height: 0.1875rem;
+        border-radius: 0.625rem;
+        transform: scaleX(0);
+        transition: 0.3s transform;
+        transform-origin: 100% 0;
+        background: $maincolor;
+        opacity: 0.9;
+        position: absolute;
+        bottom: -0.3125rem;
+        left: 0;
+        width: 100%;
+        z-index: 333;
+    }
+    
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    &:hover {
+        color: $maincolor;
+    }
+}
+
+.header__right-button {
+    border: 0.125rem solid #FFC256;
+    filter: drop-shadow(0rem 0rem 1.875rem #FFC256);
+    border-radius: 0.3125rem;
+    padding: 1rem 1.5625rem;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    color: $maincolor;
+    margin-left: 2.1875rem;
+    white-space: nowrap;
+    transition: 0.5s;
+    &:hover {
+        background-color: #ffc256;
+        color: #fff;
+    }
+}
+
+.menu-burger {
+    width: 2.3125rem;
+    height: 2.3125rem;
+    position: relative;
+    margin-left: 4.8125rem;
+    cursor: pointer;
+    &.active {
+        position: fixed;
+        right: 1.25rem;
+        top: 1.25rem;
+        z-index: 20;
+    }
+    
+    &.active .menu-burger__line::after {
+        transform: rotate(45deg) translate(0, -50%);
+        width: 100%;
+        bottom: 50%;
+    }
+
+    &.active .menu-burger__line::before {
+        transform: rotate(-45deg) translate(0, -50%);
+        top: 50%;
+    }
+
+    &.active .menu-burger__line {
+        width: 0;
+    }
+    
+    .menu-burger__line {
+        width: 100%;
+        height: 0.125rem;
+        background-color: #fff;
+        border-radius: 0.625rem;
+        display: inline-block;
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            border-radius: 0.625rem;
+            width: 100%;
+            height: 0.125rem;
+            transition: 0.3s;
+        }
+    
+        &::after {
+            bottom: 0.875rem;
+            width: 70%;
+        }
+    
+        &::before {
+            top: 0.4375rem;
+        }
+    }
+}
+
+.dropdown-menu {
+    position: fixed;
+    right: -50%;
+    top: 0;
+    background-color: $maincolor;
+    width: 20%;
+    height: 100%;
+    z-index: 10;
+    transition: 0.3s;
+    &.active {
+        right: 0;
+    }
+}
+
+.dropdown-menu__body {
+    padding: 1.25rem;
+}
+
+.dropdown-menu-link {
+    font-size: 25px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -0.125rem;
+        background-color: #fff;
+        width: 50%;
+        height: 0.125rem;
+        transition: 0.3s;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.main__content {
+    margin-top: 11.25rem;
+}
+
+.main__content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__content-title {
+    font-size: 2.25rem;
+    line-height: 2.6875rem;
+    color: #FFFFFF;
+    max-width: 39.375rem;
+    span {
+        color: $maincolor;
+    }
+}
+
+.main__content-button {
+    padding: 1.875rem 2.8125rem;
+    margin-top: 5.3125rem;
+}
+
+.play-button {
+    border: 0.125rem solid $maincolor;
+    filter: drop-shadow(0rem 0rem 3.125rem #FFC256);
+    width: 5.8125rem;
+    height: 5.8125rem;
+    padding: 0.9375rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 9.375rem;
+    &:hover {
+        background-color: #ffc256;
+    }
+}
+
+.play-button__block {
+    background: rgba(255, 190, 75, 0.3);
+    box-shadow: 0rem 0rem 3.125rem $maincolor;
+    width: 3.9375rem;
+    height: 3.9375rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button__play {
+    border-top: 0.9375rem solid transparent;
+    border-bottom: 0.9375rem solid transparent;
+    border-left: 1.25rem solid #fff;
+    width: 0;
+    height: 0;
+}
+
+.main__content-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9.375rem;
+}
+
+.main__content-item {
+    display: flex;
+    align-items: center;
+    .main__content-dot {
+        opacity: 0.5;
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+        &::before {
+            content: '';
+            width: 0.875rem;
+            height: 0.875rem;
+            background-color: $maincolor;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            box-shadow: 0rem 0rem 0.9375rem $maincolor; 
+        }
+    }
+}
+
+.main__content-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: #FFFFFF;
+}
