@@ -8,90 +8,956 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main">
         <div class="container">
-            <header class="header">
-                <div class="header__left">
-                    <a href="/" class="logo">
-                        <span class="logo__title">Инком</span>
-                        <span class="logo__subtitle">Недвижимость</span>
-                    </a>
-                    <span class="header__left-text">Все работают с недвижимостью, а мы - с людьми</span>
-                </div>
-                <div class="header__right">
-                    <a href="tel:+76845550102" class="header__right-tel">+7 (684) 555-01-02</a>
-                    <a href="#" class="header__right-button">Бесплатная консультация</a>
-                    <div class="menu-burger">
-                        <span class="menu-burger__line"></span>
+            <div class="main__body">
+                <header class="header">
+                    <div class="header__left">
+                        <a href="/" class="logo">
+                            <span class="logo__title">Инком</span>
+                            <span class="logo__subtitle">Недвижимость</span>
+                        </a>
+                        <span class="header__left-text">Все работают с недвижимостью, а мы - с людьми</span>
+                    </div>
+                    <div class="header__right">
+                        <a href="tel:+76845550102" class="header__right-tel">+7 (684) 555-01-02</a>
+                        <a href="#" class="header__right-button">Бесплатная консультация</a>
+                        <div class="menu-burger">
+                            <span class="menu-burger__line"></span>
+                        </div>
+                    </div>
+                </header>
+                <div class="dropdown-menu">
+                    <div class="dropdown-menu__body">
+                        <ul class="dropdown-menu__menu">
+                            <li class="dropdown-menu__item">
+                                <a href="/" class="dropdown-menu-link">Главная</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <a href="#" class="dropdown-menu-link">О компание</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <a href="#" class="dropdown-menu-link">Отзывы</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <a href="#" class="dropdown-menu-link">Контакты</a>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <a href="#" class="dropdown-menu-link">Помощь</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </header>
-            <div class="dropdown-menu">
-                <div class="dropdown-menu__body">
-                    <ul class="dropdown-menu__menu">
-                        <li class="dropdown-menu__item">
-                            <a href="/" class="dropdown-menu-link">Главная</a>
+                <div class="main__content">
+                    <div class="main__content-row">
+                        <div class="main__content-left">
+                            <h1 class="main__content-title">
+                                Агентство недвижимости <span class="text">ИНКОМ</span>
+                                Мы гарантировано 
+                                продадим  вашу недвижимость 
+                                на <span class="text">15% дороже</span>
+                            </h1>
+                            <a href="#" class="main__content-button button">Узнать стоимость продажи</a>
+                        </div>
+                        <div class="main__content-right">
+                            <div class="play-button">
+                                <div class="play-button__block">
+                                    <div class="play-button__play"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="main__content-list">
+                        <li class="main__content-item">
+                            <span class="main__content-dot"></span>
+                            <span class="main__content-text">
+                                Продано недвижимости на 3 млрд рублей за 5 лет
+                            </span>
                         </li>
-                        <li class="dropdown-menu__item">
-                            <a href="#" class="dropdown-menu-link">О компание</a>
+                        <li class="main__content-item">
+                            <span class="main__content-dot"></span>
+                            <span class="main__content-text">
+                                Юридическое сопровождение
+                            </span>
                         </li>
-                        <li class="dropdown-menu__item">
-                            <a href="#" class="dropdown-menu-link">Отзывы</a>
-                        </li>
-                        <li class="dropdown-menu__item">
-                            <a href="#" class="dropdown-menu-link">Контакты</a>
-                        </li>
-                        <li class="dropdown-menu__item">
-                            <a href="#" class="dropdown-menu-link">Помощь</a>
+                        <li class="main__content-item">
+                            <span class="main__content-dot"></span>
+                            <span class="main__content-text">
+                                Квартиры по Москве и области на любой выбор
+                            </span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="main__content">
-                <div class="main__content-row">
-                    <div class="main__content-left">
-                        <h1 class="main__content-title">
-                            Агентство недвижимости <span>ИНКОМ</span>
-                            Мы гарантировано 
-                            продадим  вашу недвижимость 
-                            на <span>15% дороже</span>
-                        </h1>
-                        <a href="#" class="main__content-button button">Узнать стоимость продажи</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h2 class="title content__top-title">Почему мы продаем дорого и делаем это в <span class="text">2 раза быстрее</span></h2>
+            <div class="content__cards">
+                <div class="content__card">
+                    <div class="content__card-content">
+                        <div class="conten__card-body">
+                            <span class="content__card-number">01</span>
+                            <h3 class="content__card-title">Собственная база покупателей</h3>
+                            <ul class="content__card-list">
+                                <li class="content__card-item">
+                                    <span class="content__card-text"><span class="text">Создаем спрос</span> на объект еще до размещения его в рекламе</span>
+                                </li>
+                                <li class="content__card-item">
+                                    <span class="content__card-text">Используем <span class="text">закрытые базы</span> риэлторов</span>
+                                </li>
+                                <li class="content__card-item">
+                                    <span class="content__card-text">Продаем через собственную наработанную базу из <span class="text">6000</span></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="content__card-button button-border button">Получите превью предложения</a>
+                        </div>
                     </div>
-                    <div class="main__content-right">
-                        <div class="play-button">
-                            <div class="play-button__block">
-                                <div class="play-button__play"></div>
+                    <div class="content__card-images">
+                        <div class="content__card-image">
+                            <img src="img/Rectangle 4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content__card">
+                    <div class="content__card-images">
+                        <div class="content__card-image">
+                            <img src="img/Rectangle 4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content__card-content">
+                        <div class="conten__card-body">
+                            <span class="content__card-number">02</span>
+                            <h3 class="content__card-title">Собственная база покупателей</h3>
+                            <ul class="content__card-list">
+                                <li class="content__card-item">
+                                    <span class="content__card-text"><span class="text">Создаем спрос</span> на объект еще до размещения его в рекламе</span>
+                                </li>
+                                <li class="content__card-item">
+                                    <span class="content__card-text">Используем <span class="text">закрытые базы</span> риэлторов</span>
+                                </li>
+                                <li class="content__card-item">
+                                    <span class="content__card-text">Продаем через собственную наработанную базу из <span class="text">6000</span></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="content__card-button button-border button">Получите превью предложения</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__card">
+                    <div class="content__card-content">
+                        <div class="conten__card-body">
+                            <span class="content__card-number">03</span>
+                            <h3 class="content__card-title">Собственная база покупателей</h3>
+                            <ul class="content__card-list">
+                                <li class="content__card-item">
+                                    <span class="content__card-text"><span class="text">Создаем спрос</span> на объект еще до размещения его в рекламе</span>
+                                </li>
+                                <li class="content__card-item">
+                                    <span class="content__card-text">Используем <span class="text">закрытые базы</span> риэлторов</span>
+                                </li>
+                                <li class="content__card-item">
+                                    <span class="content__card-text">Продаем через собственную наработанную базу из <span class="text">6000</span></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="content__card-button button-border button">Получите превью предложения</a>
+                        </div>
+                    </div>
+                    <div class="content__card-images">
+                        <div class="content__card-image">
+                            <img src="img/Rectangle 4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selling">
+        <div class="container">
+            <div class="selling__row">
+                <div class="selling__left">
+                    <h2 class="selling__title"><span class="text">Продажа недвижимости</span> в Москве и Подмосковье</h2>
+                    <p class="selling__description">
+                        Мы оказываем риэлторские услуги по аренде и продаже недвижимости
+                        во всех сегментах. С помощью наших специалистов вы сможете купить
+                        элитную недвижимость в Москве и Подмосковье, а также приобрести
+                        жилье эконом-класса.
+                    </p>
+                    <p class="selling__description">
+                        Специалисты нашего агентства помогут в подборе оптимального для
+                        вас варианта и оформят сделку по  купле-продаже недвижимости 
+                        максимально надежно и быстро!
+                    </p>
+                </div>
+                <div class="selling__right">
+                    <div class="selling__cards">
+                        <div class="selling__card">
+                            <div class="selling__card-body">
+                                <h2 class="selling__card-title">Продайте недвижимость в залоге, ипотеке или с долгами без потери в цене</h2>
+                                <p class="selling__card-description">Агентство недвижимости ИНКОМ — все риэлторские услуги: покупка, продажа, обмен, аренда жилой и коммерческой недвижимости Москвы и Подмосковь</p>
+                                <ul class="selling__card-list">
+                                    <li class="selling__card-item">
+                                        <span class="selling__card-text"><span class="text">Создаем спрос</span> на объект еще до размещения его в рекламе</span>
+                                    </li>
+                                    <li class="selling__card-item">
+                                        <span class="selling__card-text">Используем <span class="text">закрытые базы</span> риэлторов</span>
+                                    </li>
+                                    <li class="selling__card-item">
+                                        <span class="selling__card-text">Продаем через собственную наработанную базу из <span class="text">6000</span></span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="selling__button button button-border">Больше информации</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <ul class="main__content-list">
-                    <li class="main__content-item">
-                        <span class="main__content-dot"></span>
-                        <span class="main__content-text">
-                            Продано недвижимости на 3 млрд рублей за 5 лет
-                        </span>
-                    </li>
-                    <li class="main__content-item">
-                        <span class="main__content-dot"></span>
-                        <span class="main__content-text">
-                            Юридическое сопровождение
-                        </span>
-                    </li>
-                    <li class="main__content-item">
-                        <span class="main__content-dot"></span>
-                        <span class="main__content-text">
-                            Квартиры по Москве и области на любой выбор
-                        </span>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
+    <div class="catalog">
+        <div class="container">
+            <h2 class="catalog__title title">Каталог <span class="text">недвижимости</span></h2>
+            <div class="catalog__tabs">
+                <div class="catalog__tab active" data-tabs-tab="apartments">
+                    <span class="catalog__tab-text">
+                        Квартиры и новостройки
+                    </span>
+                </div>
+                <div class="catalog__tab" data-tabs-tab="newBuilding">
+                    <span class="catalog__tab-text">
+                        Новостройки
+                    </span>
+                </div>
+                <div class="catalog__tab" data-tabs-tab="rent">
+                    <span class="catalog__tab-text">
+                        Аренда квартир и комнат
+                    </span>
+                </div>
+                <div class="catalog__tab" data-tabs-tab="country">
+                    <span class="catalog__tab-text">
+                        Загородная
+                    </span>
+                </div>
+            </div>
+            <div class="catalog__sliders" data-tabs-body="apartments">
+                <div class="swiper catalog__slider catalog__slider-apartments">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/living-room-g6f6523f4d_1920.jpg" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">4-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 12 корпус 1, сдача в 4 кв. 2022</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2022
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/bedroom-ga1e7da6b4_1280.jpg" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">1-комн. квартира, 25,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 11 корпус 1, сдача в 4 кв. 2022</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        25,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        12,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        3 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2022
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/wall-g04fe2fd8c_1280.jpg" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">2-комн. квартира, 35,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 9 корпус 1, сдача в 4 кв. 2022</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        35,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        15,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        10,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        8 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2022
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                   </div>
+                  <div class="swiper-button-next">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                  </div>
+            </div>
+            <div class="catalog__sliders hidden" data-tabs-body="newBuilding">
+                <div class="swiper catalog__slider catalog__slider-newbuilding">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">Новостройки<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2021
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2021
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        22,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        11 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2025
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                   </div>
+                  <div class="swiper-button-next">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                  </div>
+            </div>
+            <div class="catalog__sliders hidden" data-tabs-body="rent">
+                <div class="swiper catalog__slider catalog__slider-rent">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2021
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2021
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        22,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        11 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2022
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                   </div>
+                  <div class="swiper-button-next">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                  </div>
+            </div>
+            <div class="catalog__sliders hidden" data-tabs-body="country">
+                <div class="swiper catalog__slider catalog__slider-country">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2021
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        27,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        7 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2021
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="catalog__slider-images">
+                            <img src="img/Rectangle 2 (1).png" alt="">
+                        </div>
+                        <div class="catalog__slider-content">
+                            <h3 class="catalog__slider-title">3-комн. квартира, 125,4 м<sup>2</sup></h3>
+                            <p class="catalog__slider-description">в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021</p>
+                            <div class="catalog__slider-metas">
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        125,4 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Общая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        97,9 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Жилая
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        22,5 м<sup>2</sup>
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Кухня
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        11 из 11
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Этаж
+                                    </span>
+                                </div>
+                                <div class="catalog__slider-meta">
+                                    <span class="catalog__slider-number">
+                                        2022
+                                    </span>
+                                    <span class="catalog__slider-text">
+                                        Сроки сдачи
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                   </div>
+                  <div class="swiper-button-next">
+                    <svg width="42" height="68" viewBox="0 0 42 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.0334 0L41.9667 7.93333L15.9001 34L41.9667 60.0667L34.0334 68L0.0333967 34L34.0334 0Z" fill="#CFA55B"/>
+                    </svg>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="questions">
+        <div class="container">
+            <div class="questions__row">
+                <h2 class="questions__title">Еще остались вопросы?</h2>
+                <p class="questions__description">
+                    Наши эксперты помогут осуществить любые сделки с недвижимостью — обмен,
+                    покупку или продажу недвижимости в Москве и области, аренду городских и 
+                    загородных объектов.
+                </p>
+                <form action="#" method="post" class="questions__form">
+                    <input type="text" class="questions__input" placeholder="Введите ваш телефон">
+                    <button class="questions__button button button-border">Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__left">
+                    <span class="footer__icon">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6271 8.54688C16.8786 8.54688 14.6415 10.784 14.6415 13.5325C14.6415 16.2811 16.8786 18.5182 19.6271 18.5182C22.3757 18.5182 24.6128 16.2811 24.6128 13.5325C24.6128 10.784 22.3757 8.54688 19.6271 8.54688ZM19.6271 17.0937C17.6635 17.0937 16.066 15.4962 16.066 13.5325C16.066 11.5689 17.6635 9.97135 19.6271 9.97135C21.5908 9.97135 23.1883 11.5689 23.1883 13.5325C23.1883 15.4962 21.5908 17.0937 19.6271 17.0937Z" fill="#CFA55B"/>
+                            <path d="M29.159 4.00064C26.5793 1.42091 23.1491 0 19.5011 0C15.8523 0 12.4228 1.42091 9.84312 4.00064C5.06899 8.77406 4.4757 17.7554 8.55824 23.1969L19.5011 39L30.4275 23.2189C34.5264 17.7554 33.9331 8.77406 29.159 4.00064ZM29.2723 22.3863L19.5011 36.4972L9.71421 22.3643C6.01128 17.427 6.5419 9.31607 10.8509 5.00774C13.1614 2.69724 16.2333 1.42448 19.5011 1.42448C22.7688 1.42448 25.8407 2.69724 28.1519 5.00774C32.4609 9.31607 32.9916 17.427 29.2723 22.3863Z" fill="#CFA55B"/>
+                        </svg>
+                    </span>
+                    <span class="footer__text">610000 г. Киров, ул. Карла Маркса 21, офис 334 </span>
+                </div>
+                <div class="footer__right">
+                    <a href="tel:+76845550102" class="footer__tel">+7 (684) 555-01-02</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/sliders.js"></script>
 </body>
 </html>
