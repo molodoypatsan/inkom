@@ -84,6 +84,7 @@ $maincolor: #cfa55b;
     border: none;
     outline: none;
     cursor: pointer;
+    text-align: center;
     &::before {
         content: '';
         position: absolute;
@@ -255,6 +256,12 @@ $maincolor: #cfa55b;
     margin-left: 4.8125rem;
     cursor: pointer;
     z-index: 20;
+    &.active {
+        position: fixed;
+        right: 1.25rem;
+        top: 1.25rem;
+    }
+
     &.active::after {
         transform: rotate(45deg);
         width: 100%;
@@ -675,6 +682,7 @@ $maincolor: #cfa55b;
 .catalog__tabs {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .catalog__tab {
@@ -685,6 +693,7 @@ $maincolor: #cfa55b;
     margin-bottom: 3.8125rem;
     cursor: pointer;
     transition: 0.3s;   
+    white-space: nowrap;
     &.active {
         background-color: $maincolor;
         box-shadow: 0rem 0.25rem 1.25rem rgba(207, 165, 91, 0.5);
@@ -779,35 +788,6 @@ $maincolor: #cfa55b;
     color: #8C8C8C;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    top: 40%;
-    position: absolute;
-    opacity: 0.5;
-    transition: 0.3s;
-}
-
-.swiper-button-next:hover, .swiper-button-prev:hover {
-    opacity: 1;
-}
-
-.swiper-button-next svg, .swiper-button-prev svg {
-    width: 2.625rem;
-    height: 4.25rem;
-}
-
-.swiper-button-next::after, .swiper-button-prev::after {
-    content: '';
-}
-
-.swiper-button-next {
-    right: 5.75rem;
-    transform: rotate(180deg);
-}
-
-.swiper-button-prev {
-    left: 5.75rem;
-}
-
 .questions {
     background: url('../img/Rectangle 3.png') no-repeat center/cover fixed;
     position: relative;
@@ -854,6 +834,7 @@ $maincolor: #cfa55b;
     outline: none;
     width: 34.6875rem;
     margin-right: 1.6875rem;
+    margin-bottom: 1.25rem;
     &:focus {
         outline: 0.0625rem solid $maincolor;
     }
@@ -956,6 +937,12 @@ $maincolor: #cfa55b;
     }
 }
 
+@media (max-width: 58.75rem) {
+    .selling__cards::before {
+        left: 0.875rem;
+    }
+}
+
 @media (max-width: 54.0625rem) {
     .container {
         max-width: 42.5rem;
@@ -981,6 +968,49 @@ $maincolor: #cfa55b;
     .main__content-list {
         margin-top: 3.25rem;
     }
+
+    .content__card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content__card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content__card-images {
+        width: 100%;
+        order: 1;
+        margin-top: 1.875rem;
+    }
+
+    .selling__row {
+        flex-direction: column;
+    }
+
+    .selling__right {
+        width: 100%;
+    }
+
+    .selling__button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .catalog__sliders {
+        padding: 0;
+        width: 100%;
+    }
+
+    .swiper-button-next {
+        right: 0.75rem;
+    }
+
+    .swiper-button-prev {
+        left: 0.75rem;
+    }
 }
 
 @media (max-width: 42.1875rem) {
@@ -998,6 +1028,16 @@ $maincolor: #cfa55b;
     }
 }
 
+@media (max-width: 40rem) {
+    .catalog__slider-metas {
+        flex-direction: column;
+    }
+
+    .questions__input {
+        width: 100%;
+    }
+}
+
 @media (max-width: 34.0625rem) {
     .header__right {
         flex-wrap: wrap;
@@ -1010,6 +1050,21 @@ $maincolor: #cfa55b;
 
     .menu-burger {
         margin-top: 1.25rem;
+    }
+}
+
+@media (max-width: 33.6875rem) {
+    .catalog__tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog__tab {
+        margin-right: 0;
+    }
+
+    .footer__row {
+        flex-direction: column;
     }
 }
 
@@ -1031,4 +1086,13 @@ $maincolor: #cfa55b;
         white-space: nowrap;
         padding: 1.875rem 0.8125rem;
     }
+
+    .content__card-button {
+        padding: 2rem;
+    }
+
+    .selling__card-body {
+        padding: 2.25rem 1.5rem;
+    }
 }
+
